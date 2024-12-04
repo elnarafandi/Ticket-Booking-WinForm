@@ -40,6 +40,8 @@
             btnSignup = new Button();
             panel1 = new Panel();
             label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -146,6 +148,8 @@
             // panel1
             // 
             panel1.BackColor = Color.HotPink;
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
             panel1.Location = new Point(1, -1);
             panel1.Name = "panel1";
@@ -157,11 +161,33 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(38, 289);
+            label6.Location = new Point(36, 214);
             label6.Name = "label6";
-            label6.Size = new Size(272, 39);
+            label6.Size = new Size(169, 39);
             label6.TabIndex = 0;
-            label6.Text = "Welcome Back!";
+            label6.Text = "Welcome";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(36, 272);
+            label7.Name = "label7";
+            label7.Size = new Size(263, 39);
+            label7.TabIndex = 1;
+            label7.Text = "Ticket Booking";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(36, 326);
+            label8.Name = "label8";
+            label8.Size = new Size(204, 39);
+            label8.TabIndex = 2;
+            label8.Text = "Application";
             // 
             // SignUp
             // 
@@ -202,5 +228,7 @@
         private Button btnSignup;
         private Panel panel1;
         private Label label6;
+        private Label label8;
+        private Label label7;
     }
 }

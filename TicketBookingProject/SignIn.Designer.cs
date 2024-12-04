@@ -35,8 +35,6 @@
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             panel1 = new Panel();
-            label6 = new Label();
-            label5 = new Label();
             label4 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -106,46 +104,22 @@
             // panel1
             // 
             panel1.BackColor = Color.HotPink;
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(325, 539);
             panel1.TabIndex = 6;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(45, 282);
-            label6.Name = "label6";
-            label6.Size = new Size(172, 32);
-            label6.TabIndex = 2;
-            label6.Text = "Application";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(45, 234);
-            label5.Name = "label5";
-            label5.Size = new Size(220, 32);
-            label5.TabIndex = 1;
-            label5.Text = "Ticket Booking";
-            // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(45, 188);
+            label4.Location = new Point(36, 234);
             label4.Name = "label4";
-            label4.Size = new Size(141, 32);
+            label4.Size = new Size(227, 32);
             label4.TabIndex = 0;
-            label4.Text = "Welcome";
+            label4.Text = "Welcome Back!";
             // 
             // SignIn
             // 
@@ -177,8 +151,6 @@
         private TextBox txtUsername;
         private TextBox txtPassword;
         private Panel panel1;
-        private Label label6;
-        private Label label5;
         private Label label4;
     }
 }
