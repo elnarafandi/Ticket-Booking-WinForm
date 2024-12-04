@@ -39,10 +39,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Symbol", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(328, 40);
+            label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.HotPink;
+            label1.Location = new Point(299, 52);
             label1.Name = "label1";
-            label1.Size = new Size(153, 54);
+            label1.Size = new Size(163, 50);
             label1.TabIndex = 0;
             label1.Text = "Sign In";
             // 
@@ -50,7 +51,8 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(183, 158);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(240, 150);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
             label2.TabIndex = 1;
@@ -60,7 +62,8 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(183, 242);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(240, 247);
             label3.Name = "label3";
             label3.Size = new Size(89, 23);
             label3.TabIndex = 2;
@@ -68,12 +71,12 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ControlText;
+            button1.BackColor = Color.HotPink;
             button1.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(183, 335);
+            button1.Location = new Point(240, 386);
             button1.Name = "button1";
-            button1.Size = new Size(453, 44);
+            button1.Size = new Size(308, 50);
             button1.TabIndex = 3;
             button1.Text = "Sign In";
             button1.UseVisualStyleBackColor = false;
@@ -82,7 +85,7 @@
             // txtUsername
             // 
             txtUsername.BackColor = SystemColors.ControlLight;
-            txtUsername.Location = new Point(328, 154);
+            txtUsername.Location = new Point(240, 186);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(308, 27);
             txtUsername.TabIndex = 4;
@@ -90,7 +93,7 @@
             // txtPassword
             // 
             txtPassword.BackColor = SystemColors.ControlLight;
-            txtPassword.Location = new Point(328, 238);
+            txtPassword.Location = new Point(240, 282);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(308, 27);
             txtPassword.TabIndex = 5;
@@ -99,8 +102,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Yellow;
+            ClientSize = new Size(795, 538);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(button1);
