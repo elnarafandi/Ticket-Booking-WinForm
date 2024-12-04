@@ -39,13 +39,15 @@
             txtEvent = new TextBox();
             txtSeat = new TextBox();
             txtPrice = new TextBox();
-            txtVenue = new TextBox();
             btnCreate = new Button();
             btnUpdate = new Button();
             btnDelete = new Button();
             dataGridView1 = new DataGridView();
             label7 = new Label();
+            panel1 = new Panel();
+            txtVenue = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -110,7 +112,7 @@
             // 
             // txtId
             // 
-            txtId.BackColor = SystemColors.ControlLight;
+            txtId.BackColor = Color.White;
             txtId.Location = new Point(60, 126);
             txtId.Name = "txtId";
             txtId.Size = new Size(214, 27);
@@ -118,7 +120,7 @@
             // 
             // txtDate
             // 
-            txtDate.BackColor = SystemColors.ControlLight;
+            txtDate.BackColor = Color.White;
             txtDate.Location = new Point(60, 268);
             txtDate.Name = "txtDate";
             txtDate.Size = new Size(214, 27);
@@ -126,7 +128,7 @@
             // 
             // txtEvent
             // 
-            txtEvent.BackColor = SystemColors.ControlLight;
+            txtEvent.BackColor = Color.White;
             txtEvent.Location = new Point(60, 195);
             txtEvent.Name = "txtEvent";
             txtEvent.Size = new Size(214, 27);
@@ -134,7 +136,7 @@
             // 
             // txtSeat
             // 
-            txtSeat.BackColor = SystemColors.ControlLight;
+            txtSeat.BackColor = Color.White;
             txtSeat.Location = new Point(60, 341);
             txtSeat.Name = "txtSeat";
             txtSeat.Size = new Size(214, 27);
@@ -142,19 +144,11 @@
             // 
             // txtPrice
             // 
-            txtPrice.BackColor = SystemColors.ControlLight;
+            txtPrice.BackColor = Color.White;
             txtPrice.Location = new Point(60, 489);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(214, 27);
             txtPrice.TabIndex = 10;
-            // 
-            // txtVenue
-            // 
-            txtVenue.BackColor = SystemColors.ControlLight;
-            txtVenue.Location = new Point(60, 415);
-            txtVenue.Name = "txtVenue";
-            txtVenue.Size = new Size(214, 27);
-            txtVenue.TabIndex = 11;
             // 
             // btnCreate
             // 
@@ -194,8 +188,9 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(376, 126);
+            dataGridView1.Location = new Point(367, 126);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -206,12 +201,29 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Showcard Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.HotPink;
-            label7.Location = new Point(376, 19);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(381, 18);
             label7.Name = "label7";
             label7.Size = new Size(150, 46);
             label7.TabIndex = 16;
             label7.Text = "Ticket";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.HotPink;
+            panel1.Controls.Add(label7);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(945, 78);
+            panel1.TabIndex = 18;
+            // 
+            // txtVenue
+            // 
+            txtVenue.Location = new Point(60, 415);
+            txtVenue.Name = "txtVenue";
+            txtVenue.Size = new Size(214, 27);
+            txtVenue.TabIndex = 19;
             // 
             // ActionOnTicketItems
             // 
@@ -219,12 +231,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
             ClientSize = new Size(945, 670);
-            Controls.Add(label7);
+            Controls.Add(txtVenue);
+            Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
-            Controls.Add(txtVenue);
             Controls.Add(txtPrice);
             Controls.Add(txtSeat);
             Controls.Add(txtEvent);
@@ -239,6 +251,8 @@
             Name = "ActionOnTicketItems";
             Text = "ActionOnTicketItems";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -256,11 +270,12 @@
         private TextBox txtEvent;
         private TextBox txtSeat;
         private TextBox txtPrice;
-        private TextBox txtVenue;
         private Button btnCreate;
         private Button btnUpdate;
         private Button btnDelete;
         private DataGridView dataGridView1;
         private Label label7;
+        private Panel panel1;
+        private TextBox txtVenue;
     }
 }

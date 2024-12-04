@@ -45,7 +45,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1057, 117);
+            panel1.Size = new Size(984, 104);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -53,7 +53,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(402, 34);
+            label1.Location = new Point(326, 25);
             label1.Name = "label1";
             label1.Size = new Size(349, 50);
             label1.TabIndex = 0;
@@ -61,12 +61,13 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(478, 115);
+            dataGridView1.Location = new Point(478, 140);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(579, 395);
+            dataGridView1.Size = new Size(494, 341);
             dataGridView1.TabIndex = 1;
             // 
             // label2
@@ -82,7 +83,7 @@
             // 
             // textTicketId
             // 
-            textTicketId.BackColor = SystemColors.ControlLight;
+            textTicketId.BackColor = Color.White;
             textTicketId.Location = new Point(105, 264);
             textTicketId.Name = "textTicketId";
             textTicketId.Size = new Size(233, 27);
@@ -103,7 +104,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
-            ClientSize = new Size(1057, 508);
+            ClientSize = new Size(984, 508);
             Controls.Add(btnBook);
             Controls.Add(textTicketId);
             Controls.Add(label2);

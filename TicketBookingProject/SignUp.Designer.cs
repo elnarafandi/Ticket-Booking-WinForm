@@ -38,6 +38,9 @@
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             btnSignup = new Button();
+            panel1 = new Panel();
+            label6 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -45,7 +48,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.HotPink;
-            label1.Location = new Point(292, 42);
+            label1.Location = new Point(634, 42);
             label1.Name = "label1";
             label1.Size = new Size(179, 50);
             label1.TabIndex = 0;
@@ -56,7 +59,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(156, 176);
+            label2.Location = new Point(492, 176);
             label2.Name = "label2";
             label2.Size = new Size(87, 23);
             label2.TabIndex = 1;
@@ -67,7 +70,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(156, 251);
+            label3.Location = new Point(492, 251);
             label3.Name = "label3";
             label3.Size = new Size(56, 23);
             label3.TabIndex = 2;
@@ -78,7 +81,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(156, 329);
+            label4.Location = new Point(492, 329);
             label4.Name = "label4";
             label4.Size = new Size(95, 23);
             label4.TabIndex = 3;
@@ -89,7 +92,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(156, 408);
+            label5.Location = new Point(492, 408);
             label5.Name = "label5";
             label5.Size = new Size(89, 23);
             label5.TabIndex = 4;
@@ -97,32 +100,32 @@
             // 
             // txtFullname
             // 
-            txtFullname.BackColor = SystemColors.ControlLight;
-            txtFullname.Location = new Point(318, 172);
+            txtFullname.BackColor = Color.White;
+            txtFullname.Location = new Point(634, 172);
             txtFullname.Name = "txtFullname";
             txtFullname.Size = new Size(323, 27);
             txtFullname.TabIndex = 5;
             // 
             // txtEmail
             // 
-            txtEmail.BackColor = SystemColors.ControlLight;
-            txtEmail.Location = new Point(318, 247);
+            txtEmail.BackColor = Color.White;
+            txtEmail.Location = new Point(634, 247);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(323, 27);
             txtEmail.TabIndex = 6;
             // 
             // txtUsername
             // 
-            txtUsername.BackColor = SystemColors.ControlLight;
-            txtUsername.Location = new Point(318, 325);
+            txtUsername.BackColor = Color.White;
+            txtUsername.Location = new Point(634, 325);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(323, 27);
             txtUsername.TabIndex = 7;
             // 
             // txtPassword
             // 
-            txtPassword.BackColor = SystemColors.ControlLight;
-            txtPassword.Location = new Point(318, 404);
+            txtPassword.BackColor = Color.White;
+            txtPassword.Location = new Point(634, 404);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(323, 27);
             txtPassword.TabIndex = 8;
@@ -132,20 +135,41 @@
             btnSignup.BackColor = Color.HotPink;
             btnSignup.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             btnSignup.ForeColor = SystemColors.ControlLightLight;
-            btnSignup.Location = new Point(156, 502);
+            btnSignup.Location = new Point(492, 517);
             btnSignup.Name = "btnSignup";
-            btnSignup.Size = new Size(499, 57);
+            btnSignup.Size = new Size(465, 57);
             btnSignup.TabIndex = 9;
             btnSignup.Text = "Sign up";
             btnSignup.UseVisualStyleBackColor = false;
             btnSignup.Click += btnSignup_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.HotPink;
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(1, -1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(380, 628);
+            panel1.TabIndex = 10;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(38, 289);
+            label6.Name = "label6";
+            label6.Size = new Size(272, 39);
+            label6.TabIndex = 0;
+            label6.Text = "Welcome Back!";
             // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
-            ClientSize = new Size(821, 628);
+            ClientSize = new Size(1064, 628);
+            Controls.Add(panel1);
             Controls.Add(btnSignup);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
@@ -158,6 +182,8 @@
             Controls.Add(label1);
             Name = "SignUp";
             Text = "SignUp";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -174,5 +200,7 @@
         private TextBox txtUsername;
         private TextBox txtPassword;
         private Button btnSignup;
+        private Panel panel1;
+        private Label label6;
     }
 }

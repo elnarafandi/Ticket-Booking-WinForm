@@ -40,11 +40,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Yellow;
-            label1.Font = new Font("Showcard Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.HotPink;
-            label1.Location = new Point(0, 37);
+            label1.Location = new Point(21, 35);
             label1.Name = "label1";
-            label1.Size = new Size(394, 54);
+            label1.Size = new Size(363, 50);
             label1.TabIndex = 0;
             label1.Text = "Ticket Booking";
             // 

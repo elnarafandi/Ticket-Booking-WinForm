@@ -34,6 +34,11 @@
             button1 = new Button();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
+            panel1 = new Panel();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -41,7 +46,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.HotPink;
-            label1.Location = new Point(299, 52);
+            label1.Location = new Point(506, 53);
             label1.Name = "label1";
             label1.Size = new Size(163, 50);
             label1.TabIndex = 0;
@@ -52,7 +57,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(240, 150);
+            label2.Location = new Point(452, 144);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
             label2.TabIndex = 1;
@@ -63,7 +68,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(240, 247);
+            label3.Location = new Point(452, 234);
             label3.Name = "label3";
             label3.Size = new Size(89, 23);
             label3.TabIndex = 2;
@@ -74,7 +79,7 @@
             button1.BackColor = Color.HotPink;
             button1.Font = new Font("Segoe UI Symbol", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(240, 386);
+            button1.Location = new Point(452, 378);
             button1.Name = "button1";
             button1.Size = new Size(308, 50);
             button1.TabIndex = 3;
@@ -84,26 +89,71 @@
             // 
             // txtUsername
             // 
-            txtUsername.BackColor = SystemColors.ControlLight;
-            txtUsername.Location = new Point(240, 186);
+            txtUsername.BackColor = Color.White;
+            txtUsername.Location = new Point(452, 179);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(308, 27);
             txtUsername.TabIndex = 4;
             // 
             // txtPassword
             // 
-            txtPassword.BackColor = SystemColors.ControlLight;
-            txtPassword.Location = new Point(240, 282);
+            txtPassword.BackColor = Color.White;
+            txtPassword.Location = new Point(452, 269);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(308, 27);
             txtPassword.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.HotPink;
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(325, 539);
+            panel1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(45, 282);
+            label6.Name = "label6";
+            label6.Size = new Size(172, 32);
+            label6.TabIndex = 2;
+            label6.Text = "Application";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(45, 234);
+            label5.Name = "label5";
+            label5.Size = new Size(220, 32);
+            label5.TabIndex = 1;
+            label5.Text = "Ticket Booking";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(45, 188);
+            label4.Name = "label4";
+            label4.Size = new Size(141, 32);
+            label4.TabIndex = 0;
+            label4.Text = "Welcome";
             // 
             // SignIn
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
-            ClientSize = new Size(795, 538);
+            ClientSize = new Size(850, 538);
+            Controls.Add(panel1);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(button1);
@@ -112,6 +162,8 @@
             Controls.Add(label1);
             Name = "SignIn";
             Text = "SignIn";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,5 +176,9 @@
         private Button button1;
         private TextBox txtUsername;
         private TextBox txtPassword;
+        private Panel panel1;
+        private Label label6;
+        private Label label5;
+        private Label label4;
     }
 }

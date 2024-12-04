@@ -42,7 +42,9 @@
             button2 = new Button();
             dataGridView1 = new DataGridView();
             label6 = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             // 
             // txtId
             // 
-            txtId.BackColor = SystemColors.ControlLight;
+            txtId.BackColor = Color.White;
             txtId.Location = new Point(81, 136);
             txtId.Name = "txtId";
             txtId.Size = new Size(212, 27);
@@ -95,7 +97,7 @@
             // 
             // txtFullname
             // 
-            txtFullname.BackColor = SystemColors.ControlLight;
+            txtFullname.BackColor = Color.White;
             txtFullname.Location = new Point(81, 206);
             txtFullname.Name = "txtFullname";
             txtFullname.Size = new Size(212, 27);
@@ -103,7 +105,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.BackColor = SystemColors.ControlLight;
+            txtEmail.BackColor = Color.White;
             txtEmail.Location = new Point(81, 277);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(212, 27);
@@ -111,7 +113,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.BackColor = SystemColors.ControlLight;
+            txtUsername.BackColor = Color.White;
             txtUsername.Location = new Point(81, 341);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(212, 27);
@@ -129,7 +131,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.BackColor = SystemColors.ControlLight;
+            txtPassword.BackColor = Color.White;
             txtPassword.Location = new Point(81, 408);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(212, 27);
@@ -161,24 +163,35 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(388, 136);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(538, 299);
+            dataGridView1.Size = new Size(528, 299);
             dataGridView1.TabIndex = 12;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Showcard Gothic", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.HotPink;
-            label6.Location = new Point(407, 20);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(404, 18);
             label6.Name = "label6";
             label6.Size = new Size(103, 43);
             label6.TabIndex = 13;
             label6.Text = "User";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.HotPink;
+            panel1.Controls.Add(label6);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(928, 78);
+            panel1.TabIndex = 14;
             // 
             // ActionOnUserItems
             // 
@@ -186,7 +199,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Yellow;
             ClientSize = new Size(928, 559);
-            Controls.Add(label6);
+            Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -203,6 +216,8 @@
             Name = "ActionOnUserItems";
             Text = "ActionOnUserItems";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -223,5 +238,6 @@
         private Button button2;
         private DataGridView dataGridView1;
         private Label label6;
+        private Panel panel1;
     }
 }
